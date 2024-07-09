@@ -1,0 +1,13 @@
+{
+    "imports": {
+        "hono": "jsr:@hono/hono@^4.4.12"
+    },
+    "tasks": {
+        "start": "deno run --allow-net main.ts",
+        "ping": "curl http://localhost:8000/ping"
+    },
+    "compilerOptions": {
+        "jsx": "precompile",
+        "jsxImportSource": "hono/jsx"
+    }
+}
